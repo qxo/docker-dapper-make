@@ -2,7 +2,7 @@ FROM docker
 
 MAINTAINER Zeyu Ye <Shuliyey@gmail.com>
 
-RUN apk add --update curl git
+RUN apk add --update curl
 
 RUN curl -sL https://releases.rancher.com/dapper/latest/dapper-`uname -s`-`uname -m` > /usr/local/bin/dapper \
   && chmod +x /usr/local/bin/dapper \
